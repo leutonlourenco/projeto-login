@@ -7,12 +7,14 @@ Laptops: 769px - 1024px
 Desktop, large screens: 1025px - 1200px
 Extra large screens, Tv: 1201px, and more */
 
+/* CONFIGURAÇÃO PARA TABLET*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
     section#login {
         width: 80vw;
+        height: 300px;
     }
     section#login > div#imagem {
         float: left;
@@ -23,13 +25,20 @@ Extra large screens, Tv: 1201px, and more */
         float: right;
         width: 70%;
     } 
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 10px 0px;
+    }
 }
+/* CONFIGURAÇÃO PARA DESKTOP E + */
 @media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
     section#login {
         width: 950px;
+        height: 340px;
     }
     section#login > div#imagem {
         float: right;
@@ -44,6 +53,7 @@ Extra large screens, Tv: 1201px, and more */
         font-size: 2em;
     }
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
